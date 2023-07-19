@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "540a8085-5672-4f13-bcb4-2e8817f579e1",
+		"name": "Position Profit/Loss Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22544603"
+	},
+	"item": [
+		{
+			"name": "Calc long position profit/loss",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/v1/calculate?type=buy&entry=5000&takeProfit=8000&stopLoss=4000&quantity=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "buy"
+						},
+						{
+							"key": "entry",
+							"value": "5000"
+						},
+						{
+							"key": "takeProfit",
+							"value": "8000"
+						},
+						{
+							"key": "stopLoss",
+							"value": "4000"
+						},
+						{
+							"key": "quantity",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Calc short position profit/loss",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/v1/calculate?type=sell&entry=5000&takeProfit=2000&stopLoss=6000&quantity=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "sell"
+						},
+						{
+							"key": "entry",
+							"value": "5000"
+						},
+						{
+							"key": "takeProfit",
+							"value": "2000"
+						},
+						{
+							"key": "stopLoss",
+							"value": "6000"
+						},
+						{
+							"key": "quantity",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Buy",
+			"value": "buy"
+		},
+		{
+			"key": "Type",
+			"value": "Buy"
+		},
+		{
+			"key": "Entry",
+			"value": "5.00000"
+		}
+	]
+}

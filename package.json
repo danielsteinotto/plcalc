@@ -1,0 +1,16 @@
+{
+  "name": "plcalc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "run": "node main.js",
+    "test": "node --test"
+  },
+  "author": "Daniel Stein Otto <daniel@steinotto.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "fastify": "^4.20.0"
+  }
+}
