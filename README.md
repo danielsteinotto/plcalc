@@ -3,9 +3,9 @@ A simple service that calculates the potential profit and loss of a position bas
 The calculator also computes position risk/reward ratio and other relevant risk management metrics.
 
 ## Getting Started
-- Generate a 24-hour API token in the Saxo Developer portal and export the token to an environment variable named SAXO_TRADER_API_TOKEN
+- Generate a 24-hour API token in the Saxo Developer portal and export the token to an environment variable named `SAXO_TRADER_API_TOKEN`
 - Import the provided Postman collection
-- Start the application
+- Start the application (`node main`)
 - Open Postman and make some requests
 
 ## Future Improvements
