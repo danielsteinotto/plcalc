@@ -58,7 +58,6 @@ export function calcShortPosRiskRewardRatio(entry, takeProfit, stopLoss, quantit
     }
     let p = calcShortPosProfit(entry, takeProfit, quantity);
     let l = calcShortPosLoss(entry, stopLoss, quantity);
-    console.log(p, l);
     if (p < 0 || l < 0) {
         return -1;  
     }
